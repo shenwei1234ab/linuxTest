@@ -1,0 +1,27 @@
+http://www.educity.cn/linux/1241661.html
+http://blog.csdn.net/qinxiongxu/article/details/7830537
+获得信号量
+semget
+
+初始化信号量
+semctl
+
+pv操作从硬件级别关闭中段，独占CPU
+semop
+
+
+显示信号量
+ipcs
+//删除
+ipcrm -s n
+
+互斥：P、V在同一个进程中
+同步：P、V在不同进程中
+信号量值含义
+S>0：S表示可用资源的个数
+S=0：表示无可用资源，无等待进程
+S<0：|S|表示等待队列中进程个数
+
+
+//
+undo 会让操作系统接管 pv值

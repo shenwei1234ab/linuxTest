@@ -1,0 +1,6 @@
+udp和tcp区别
+http://www.2cto.com/net/201310/250371.html
+
+
+send如果过大tcp分多次发送
+sendto直接返回错误

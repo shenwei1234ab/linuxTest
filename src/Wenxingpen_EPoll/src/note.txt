@@ -1,0 +1,8 @@
+cat /proc/sys/fs/file-max:查看能打开的最大文件描述符个数
+vi /etc/security/limits.conf:修改能打开的最大文件描述符个数
+ulimit -n 4096
+比poll的优势：不用遍历(轮训)所有的文件描述符。(多连接：活跃度不高)
+
+epoll:1.epoll_create    创建epoll树结构
+	  2.epoll_ctl       添加删除epoll树节点
+	  3.epoll_wait      阻塞
