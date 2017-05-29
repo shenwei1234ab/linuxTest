@@ -1,0 +1,7 @@
+/home/leave/workspace_linux/linuxTest/passport_svr/build/debug/CMakeFiles/console.dir
+/home/leave/workspace_linux/linuxTest/passport_svr/build/debug/CMakeFiles/spider.dir
+/home/leave/workspace_linux/linuxTest/passport_svr/build/debug/CMakeFiles/vnbase.dir
+/home/leave/workspace_linux/linuxTest/passport_svr/build/debug/CMakeFiles/vnlex.dir
+/home/leave/workspace_linux/linuxTest/passport_svr/build/debug/CMakeFiles/vnnet.dir
+/home/leave/workspace_linux/linuxTest/passport_svr/build/debug/CMakeFiles/vnnetssl.dir
+/home/leave/workspace_linux/linuxTest/passport_svr/build/debug/CMakeFiles/vnpktcoder.dir

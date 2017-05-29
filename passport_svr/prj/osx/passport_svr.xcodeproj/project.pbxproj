@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0CF36231B26E86700EBD772 /* ServerApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF36211B26E86700EBD772 /* ServerApp.cpp */; };
+		B0CF36371B26F0A800EBD772 /* vnbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CF362D1B26E88F00EBD772 /* vnbase.a */; };
+		B0CF36381B26F0AB00EBD772 /* vnlex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CF362F1B26E88F00EBD772 /* vnlex.a */; };
+		B0CF36391B26F0AD00EBD772 /* vnnet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CF36331B26E88F00EBD772 /* vnnet.a */; };
+		B0CF363C1B26F24200EBD772 /* PassportServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF363A1B26F24200EBD772 /* PassportServer.cpp */; };
+		B0CF363F1B26F44200EBD772 /* LogPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF363D1B26F44200EBD772 /* LogPrinter.cpp */; };
+		B0CF36451B271FCC00EBD772 /* Session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF36431B271FCC00EBD772 /* Session.cpp */; };
+		B0CF36481B271FD700EBD772 /* SessionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF36461B271FD700EBD772 /* SessionManager.cpp */; };
+		B0CF364B1B27244200EBD772 /* PublicListen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF36491B27244200EBD772 /* PublicListen.cpp */; };
+		B0CF364E1B27252100EBD772 /* PublicSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF364C1B27252100EBD772 /* PublicSession.cpp */; };
+		B0E457F71B2B1B6200AF5CAB /* AdminListen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E457ED1B2B1B6200AF5CAB /* AdminListen.cpp */; };
+		B0E457F81B2B1B6200AF5CAB /* AdminSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E457EF1B2B1B6200AF5CAB /* AdminSession.cpp */; };
+		B0E457F91B2B1B6200AF5CAB /* PassportSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E457F11B2B1B6200AF5CAB /* PassportSession.cpp */; };
+		B0E457FA1B2B1B6200AF5CAB /* PrivateListen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E457F31B2B1B6200AF5CAB /* PrivateListen.cpp */; };
+		B0E457FB1B2B1B6200AF5CAB /* PrivateSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E457F51B2B1B6200AF5CAB /* PrivateSession.cpp */; };
+		B0E458291B2B20D000AF5CAB /* vnbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CF362D1B26E88F00EBD772 /* vnbase.a */; };
+		B0E4582A1B2B20D000AF5CAB /* vnlex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CF362F1B26E88F00EBD772 /* vnlex.a */; };
+		B0E4582B1B2B20D000AF5CAB /* vnnet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CF36331B26E88F00EBD772 /* vnnet.a */; };
+		B0E4582C1B2B20ED00AF5CAB /* ConsoleApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E4581B1B2B209C00AF5CAB /* ConsoleApp.cpp */; };
+		B0E4582D1B2B267600AF5CAB /* ServerApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF36211B26E86700EBD772 /* ServerApp.cpp */; };
+		B0E458301B2B3D8700AF5CAB /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E458041B2B1B8B00AF5CAB /* Field.cpp */; };
+		B0E458311B2B3D8700AF5CAB /* MySQLConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E458061B2B1B8B00AF5CAB /* MySQLConnection.cpp */; };
+		B0E458321B2B3D8700AF5CAB /* PassPortDatabaseConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E458081B2B1B8B00AF5CAB /* PassPortDatabaseConnection.cpp */; };
+		B0E458331B2B3D8700AF5CAB /* PreparedStatement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E4580A1B2B1B8B00AF5CAB /* PreparedStatement.cpp */; };
+		B0E458341B2B3D8700AF5CAB /* QueryResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E4580D1B2B1B8B00AF5CAB /* QueryResult.cpp */; };
+		B0E458351B2B3D8700AF5CAB /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E458101B2B1B8B00AF5CAB /* Util.cpp */; };
+		B0E458361B2B3D9B00AF5CAB /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E458181B2B1BDD00AF5CAB /* libmysqlclient.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0CF362C1B26E88F00EBD772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CF36241B26E88F00EBD772 /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B008F7891AEB9D1B000D5A04;
+			remoteInfo = vnbase;
+		};
+		B0CF362E1B26E88F00EBD772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CF36241B26E88F00EBD772 /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0434F5F1AEC9F4400565633;
+			remoteInfo = vnlex;
+		};
+		B0CF36301B26E88F00EBD772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CF36241B26E88F00EBD772 /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0434F7B1AECA93000565633;
+			remoteInfo = vnlrbuilder;
+		};
+		B0CF36321B26E88F00EBD772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CF36241B26E88F00EBD772 /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0634B9E1AEF5CEA0087A795;
+			remoteInfo = vnnet;
+		};
+		B0CF36341B26E88F00EBD772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CF36241B26E88F00EBD772 /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B05FA5EE1B2433600065B083;
+			remoteInfo = vnpktcoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0CF360E1B26E62300EBD772 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B0E458201B2B20BF00AF5CAB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B0CF36101B26E62300EBD772 /* passport_svr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = passport_svr; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CF36211B26E86700EBD772 /* ServerApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServerApp.cpp; sourceTree = "<group>"; };
+		B0CF36221B26E86700EBD772 /* ServerApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerApp.h; sourceTree = "<group>"; };
+		B0CF36241B26E88F00EBD772 /* vnlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vnlib.xcodeproj; path = ../../../vnlib2/prj/osx/vnlib.xcodeproj; sourceTree = "<group>"; };
+		B0CF363A1B26F24200EBD772 /* PassportServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PassportServer.cpp; sourceTree = "<group>"; };
+		B0CF363B1B26F24200EBD772 /* PassportServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassportServer.h; sourceTree = "<group>"; };
+		B0CF363D1B26F44200EBD772 /* LogPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogPrinter.cpp; sourceTree = "<group>"; };
+		B0CF363E1B26F44200EBD772 /* LogPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogPrinter.h; sourceTree = "<group>"; };
+		B0CF36431B271FCC00EBD772 /* Session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Session.cpp; sourceTree = "<group>"; };
+		B0CF36441B271FCC00EBD772 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		B0CF36461B271FD700EBD772 /* SessionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SessionManager.cpp; sourceTree = "<group>"; };
+		B0CF36471B271FD700EBD772 /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
+		B0CF36491B27244200EBD772 /* PublicListen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PublicListen.cpp; sourceTree = "<group>"; };
+		B0CF364A1B27244200EBD772 /* PublicListen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicListen.h; sourceTree = "<group>"; };
+		B0CF364C1B27252100EBD772 /* PublicSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PublicSession.cpp; sourceTree = "<group>"; };
+		B0CF364D1B27252100EBD772 /* PublicSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicSession.h; sourceTree = "<group>"; };
+		B0CF364F1B2725E400EBD772 /* Protocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocols.h; sourceTree = "<group>"; };
+		B0E457ED1B2B1B6200AF5CAB /* AdminListen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AdminListen.cpp; sourceTree = "<group>"; };
+		B0E457EE1B2B1B6200AF5CAB /* AdminListen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminListen.h; sourceTree = "<group>"; };
+		B0E457EF1B2B1B6200AF5CAB /* AdminSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AdminSession.cpp; sourceTree = "<group>"; };
+		B0E457F01B2B1B6200AF5CAB /* AdminSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminSession.h; sourceTree = "<group>"; };
+		B0E457F11B2B1B6200AF5CAB /* PassportSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PassportSession.cpp; sourceTree = "<group>"; };
+		B0E457F21B2B1B6200AF5CAB /* PassportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassportSession.h; sourceTree = "<group>"; };
+		B0E457F31B2B1B6200AF5CAB /* PrivateListen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrivateListen.cpp; sourceTree = "<group>"; };
+		B0E457F41B2B1B6200AF5CAB /* PrivateListen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateListen.h; sourceTree = "<group>"; };
+		B0E457F51B2B1B6200AF5CAB /* PrivateSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrivateSession.cpp; sourceTree = "<group>"; };
+		B0E457F61B2B1B6200AF5CAB /* PrivateSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateSession.h; sourceTree = "<group>"; };
+		B0E458031B2B1B8B00AF5CAB /* DatabaseWorkerPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseWorkerPool.h; sourceTree = "<group>"; };
+		B0E458041B2B1B8B00AF5CAB /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
+		B0E458051B2B1B8B00AF5CAB /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		B0E458061B2B1B8B00AF5CAB /* MySQLConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MySQLConnection.cpp; sourceTree = "<group>"; };
+		B0E458071B2B1B8B00AF5CAB /* MySQLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLConnection.h; sourceTree = "<group>"; };
+		B0E458081B2B1B8B00AF5CAB /* PassPortDatabaseConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PassPortDatabaseConnection.cpp; sourceTree = "<group>"; };
+		B0E458091B2B1B8B00AF5CAB /* PassPortDatabaseConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassPortDatabaseConnection.h; sourceTree = "<group>"; };
+		B0E4580A1B2B1B8B00AF5CAB /* PreparedStatement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PreparedStatement.cpp; sourceTree = "<group>"; };
+		B0E4580B1B2B1B8B00AF5CAB /* PreparedStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreparedStatement.h; sourceTree = "<group>"; };
+		B0E4580C1B2B1B8B00AF5CAB /* ProducerConsumerQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProducerConsumerQueue.h; sourceTree = "<group>"; };
+		B0E4580D1B2B1B8B00AF5CAB /* QueryResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QueryResult.cpp; sourceTree = "<group>"; };
+		B0E4580E1B2B1B8B00AF5CAB /* QueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryResult.h; sourceTree = "<group>"; };
+		B0E4580F1B2B1B8B00AF5CAB /* SQLOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLOperation.h; sourceTree = "<group>"; };
+		B0E458101B2B1B8B00AF5CAB /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		B0E458111B2B1B8B00AF5CAB /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		B0E458181B2B1BDD00AF5CAB /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmysqlclient.a; path = ../../dep/lib/Darwin/libmysqlclient.a; sourceTree = "<group>"; };
+		B0E4581B1B2B209C00AF5CAB /* ConsoleApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleApp.cpp; sourceTree = "<group>"; };
+		B0E4581C1B2B209C00AF5CAB /* ConsoleApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleApp.h; sourceTree = "<group>"; };
+		B0E458221B2B20BF00AF5CAB /* console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = console; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0CF360D1B26E62300EBD772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CF36391B26F0AD00EBD772 /* vnnet.a in Frameworks */,
+				B0CF36381B26F0AB00EBD772 /* vnlex.a in Frameworks */,
+				B0CF36371B26F0A800EBD772 /* vnbase.a in Frameworks */,
+				B0E458361B2B3D9B00AF5CAB /* libmysqlclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E4581F1B2B20BF00AF5CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E4582B1B2B20D000AF5CAB /* vnnet.a in Frameworks */,
+				B0E4582A1B2B20D000AF5CAB /* vnlex.a in Frameworks */,
+				B0E458291B2B20D000AF5CAB /* vnbase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0CF36071B26E62300EBD772 = {
+			isa = PBXGroup;
+			children = (
+				B0E458181B2B1BDD00AF5CAB /* libmysqlclient.a */,
+				B0CF36241B26E88F00EBD772 /* vnlib.xcodeproj */,
+				B0CF361A1B26E71600EBD772 /* Source */,
+				B0CF36111B26E62300EBD772 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0CF36111B26E62300EBD772 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0CF36101B26E62300EBD772 /* passport_svr */,
+				B0E458221B2B20BF00AF5CAB /* console */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0CF361A1B26E71600EBD772 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B0CF361B1B26E73D00EBD772 /* admin */,
+				B0CF361D1B26E73D00EBD772 /* common */,
+				B0E4581A1B2B207500AF5CAB /* console */,
+				B0E458011B2B1B8B00AF5CAB /* db */,
+				B0CF361F1B26E73D00EBD772 /* server */,
+			);
+			name = Source;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		B0CF361B1B26E73D00EBD772 /* admin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = admin;
+			sourceTree = "<group>";
+		};
+		B0CF361D1B26E73D00EBD772 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B0CF363D1B26F44200EBD772 /* LogPrinter.cpp */,
+				B0CF363E1B26F44200EBD772 /* LogPrinter.h */,
+				B0CF36211B26E86700EBD772 /* ServerApp.cpp */,
+				B0CF36221B26E86700EBD772 /* ServerApp.h */,
+				B0CF36431B271FCC00EBD772 /* Session.cpp */,
+				B0CF36441B271FCC00EBD772 /* Session.h */,
+				B0CF36461B271FD700EBD772 /* SessionManager.cpp */,
+				B0CF36471B271FD700EBD772 /* SessionManager.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		B0CF361F1B26E73D00EBD772 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				B0E457ED1B2B1B6200AF5CAB /* AdminListen.cpp */,
+				B0E457EE1B2B1B6200AF5CAB /* AdminListen.h */,
+				B0E457EF1B2B1B6200AF5CAB /* AdminSession.cpp */,
+				B0E457F01B2B1B6200AF5CAB /* AdminSession.h */,
+				B0CF363A1B26F24200EBD772 /* PassportServer.cpp */,
+				B0CF363B1B26F24200EBD772 /* PassportServer.h */,
+				B0E457F11B2B1B6200AF5CAB /* PassportSession.cpp */,
+				B0E457F21B2B1B6200AF5CAB /* PassportSession.h */,
+				B0E457F31B2B1B6200AF5CAB /* PrivateListen.cpp */,
+				B0E457F41B2B1B6200AF5CAB /* PrivateListen.h */,
+				B0E457F51B2B1B6200AF5CAB /* PrivateSession.cpp */,
+				B0E457F61B2B1B6200AF5CAB /* PrivateSession.h */,
+				B0CF364F1B2725E400EBD772 /* Protocols.h */,
+				B0CF36491B27244200EBD772 /* PublicListen.cpp */,
+				B0CF364A1B27244200EBD772 /* PublicListen.h */,
+				B0CF364C1B27252100EBD772 /* PublicSession.cpp */,
+				B0CF364D1B27252100EBD772 /* PublicSession.h */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		B0CF36251B26E88F00EBD772 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0CF362D1B26E88F00EBD772 /* vnbase.a */,
+				B0CF362F1B26E88F00EBD772 /* vnlex.a */,
+				B0CF36311B26E88F00EBD772 /* vnlrbuilder */,
+				B0CF36331B26E88F00EBD772 /* vnnet.a */,
+				B0CF36351B26E88F00EBD772 /* vnpktcoder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0E458011B2B1B8B00AF5CAB /* db */ = {
+			isa = PBXGroup;
+			children = (
+				B0E458041B2B1B8B00AF5CAB /* Field.cpp */,
+				B0E458061B2B1B8B00AF5CAB /* MySQLConnection.cpp */,
+				B0E458081B2B1B8B00AF5CAB /* PassPortDatabaseConnection.cpp */,
+				B0E4580A1B2B1B8B00AF5CAB /* PreparedStatement.cpp */,
+				B0E4580D1B2B1B8B00AF5CAB /* QueryResult.cpp */,
+				B0E458101B2B1B8B00AF5CAB /* Util.cpp */,
+				B0E458031B2B1B8B00AF5CAB /* DatabaseWorkerPool.h */,
+				B0E458051B2B1B8B00AF5CAB /* Field.h */,
+				B0E458071B2B1B8B00AF5CAB /* MySQLConnection.h */,
+				B0E458091B2B1B8B00AF5CAB /* PassPortDatabaseConnection.h */,
+				B0E4580B1B2B1B8B00AF5CAB /* PreparedStatement.h */,
+				B0E4580C1B2B1B8B00AF5CAB /* ProducerConsumerQueue.h */,
+				B0E4580E1B2B1B8B00AF5CAB /* QueryResult.h */,
+				B0E4580F1B2B1B8B00AF5CAB /* SQLOperation.h */,
+				B0E458111B2B1B8B00AF5CAB /* Util.h */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		B0E4581A1B2B207500AF5CAB /* console */ = {
+			isa = PBXGroup;
+			children = (
+				B0E4581B1B2B209C00AF5CAB /* ConsoleApp.cpp */,
+				B0E4581C1B2B209C00AF5CAB /* ConsoleApp.h */,
+			);
+			path = console;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0CF360F1B26E62300EBD772 /* passport_svr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0CF36171B26E62300EBD772 /* Build configuration list for PBXNativeTarget "passport_svr" */;
+			buildPhases = (
+				B0CF360C1B26E62300EBD772 /* Sources */,
+				B0CF360D1B26E62300EBD772 /* Frameworks */,
+				B0CF360E1B26E62300EBD772 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = passport_svr;
+			productName = passport_svr;
+			productReference = B0CF36101B26E62300EBD772 /* passport_svr */;
+			productType = "com.apple.product-type.tool";
+		};
+		B0E458211B2B20BF00AF5CAB /* console */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E458261B2B20BF00AF5CAB /* Build configuration list for PBXNativeTarget "console" */;
+			buildPhases = (
+				B0E4581E1B2B20BF00AF5CAB /* Sources */,
+				B0E4581F1B2B20BF00AF5CAB /* Frameworks */,
+				B0E458201B2B20BF00AF5CAB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = console;
+			productName = console;
+			productReference = B0E458221B2B20BF00AF5CAB /* console */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0CF36081B26E62300EBD772 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = viichi.com;
+				TargetAttributes = {
+					B0CF360F1B26E62300EBD772 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B0E458211B2B20BF00AF5CAB = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B0CF360B1B26E62300EBD772 /* Build configuration list for PBXProject "passport_svr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0CF36071B26E62300EBD772;
+			productRefGroup = B0CF36111B26E62300EBD772 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B0CF36251B26E88F00EBD772 /* Products */;
+					ProjectRef = B0CF36241B26E88F00EBD772 /* vnlib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B0CF360F1B26E62300EBD772 /* passport_svr */,
+				B0E458211B2B20BF00AF5CAB /* console */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B0CF362D1B26E88F00EBD772 /* vnbase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = vnbase.a;
+			remoteRef = B0CF362C1B26E88F00EBD772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CF362F1B26E88F00EBD772 /* vnlex.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = vnlex.a;
+			remoteRef = B0CF362E1B26E88F00EBD772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CF36311B26E88F00EBD772 /* vnlrbuilder */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = vnlrbuilder;
+			remoteRef = B0CF36301B26E88F00EBD772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CF36331B26E88F00EBD772 /* vnnet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = vnnet.a;
+			remoteRef = B0CF36321B26E88F00EBD772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CF36351B26E88F00EBD772 /* vnpktcoder */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = vnpktcoder;
+			remoteRef = B0CF36341B26E88F00EBD772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0CF360C1B26E62300EBD772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E457F91B2B1B6200AF5CAB /* PassportSession.cpp in Sources */,
+				B0E457F71B2B1B6200AF5CAB /* AdminListen.cpp in Sources */,
+				B0E458301B2B3D8700AF5CAB /* Field.cpp in Sources */,
+				B0E458321B2B3D8700AF5CAB /* PassPortDatabaseConnection.cpp in Sources */,
+				B0CF36451B271FCC00EBD772 /* Session.cpp in Sources */,
+				B0CF364E1B27252100EBD772 /* PublicSession.cpp in Sources */,
+				B0E457FA1B2B1B6200AF5CAB /* PrivateListen.cpp in Sources */,
+				B0CF363C1B26F24200EBD772 /* PassportServer.cpp in Sources */,
+				B0CF363F1B26F44200EBD772 /* LogPrinter.cpp in Sources */,
+				B0E458351B2B3D8700AF5CAB /* Util.cpp in Sources */,
+				B0E458341B2B3D8700AF5CAB /* QueryResult.cpp in Sources */,
+				B0CF364B1B27244200EBD772 /* PublicListen.cpp in Sources */,
+				B0CF36231B26E86700EBD772 /* ServerApp.cpp in Sources */,
+				B0E458311B2B3D8700AF5CAB /* MySQLConnection.cpp in Sources */,
+				B0E457F81B2B1B6200AF5CAB /* AdminSession.cpp in Sources */,
+				B0E457FB1B2B1B6200AF5CAB /* PrivateSession.cpp in Sources */,
+				B0E458331B2B3D8700AF5CAB /* PreparedStatement.cpp in Sources */,
+				B0CF36481B271FD700EBD772 /* SessionManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E4581E1B2B20BF00AF5CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E4582D1B2B267600AF5CAB /* ServerApp.cpp in Sources */,
+				B0E4582C1B2B20ED00AF5CAB /* ConsoleApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B0CF36151B26E62300EBD772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../../vnlib2/inc/base ../../../vnlib2/inc/lex ../../../vnlib2/inc/net";
+			};
+			name = Debug;
+		};
+		B0CF36161B26E62300EBD772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../../vnlib2/inc/base ../../../vnlib2/inc/lex ../../../vnlib2/inc/net";
+			};
+			name = Release;
+		};
+		B0CF36181B26E62300EBD772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../dep/include/mysql,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wayne/projects/viichi/passport_svr/dep/lib/Darwin,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B0CF36191B26E62300EBD772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../dep/include/mysql,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wayne/projects/viichi/passport_svr/dep/lib/Darwin,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B0E458271B2B20BF00AF5CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B0E458281B2B20BF00AF5CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0CF360B1B26E62300EBD772 /* Build configuration list for PBXProject "passport_svr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0CF36151B26E62300EBD772 /* Debug */,
+				B0CF36161B26E62300EBD772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0CF36171B26E62300EBD772 /* Build configuration list for PBXNativeTarget "passport_svr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0CF36181B26E62300EBD772 /* Debug */,
+				B0CF36191B26E62300EBD772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E458261B2B20BF00AF5CAB /* Build configuration list for PBXNativeTarget "console" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E458271B2B20BF00AF5CAB /* Debug */,
+				B0E458281B2B20BF00AF5CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0CF36081B26E62300EBD772 /* Project object */;
+}
